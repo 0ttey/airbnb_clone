@@ -316,3 +316,159 @@ footer{
     align-items: center;
     gap: 16px;
 }
+/* ---------------------------------- */
+/* For Tablets (between 768px and 1024px) */
+/* ---------------------------------- */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .may {
+        width: 90%;
+        margin-left: 5%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 50px;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2%;
+        row-gap: 10px;
+    }
+
+    .dropdown-item {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .second_half {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ---------------------------------- */
+/* For Mobile Devices (≤ 768px) */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .may {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .june {
+        padding: 10px;
+    }
+
+    .search {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .catalog {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 10px;
+        margin: 10px 20px;
+    }
+
+    .dropdown-item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .second_half {
+        grid-template-columns: 1fr;
+    }
+
+    #first_half {
+        margin-right: 0;
+    }
+
+    .lowest {
+        flex-direction: column;
+    }
+
+    .footer-icons {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* ---------------------------------- */
+/* For Very Small Devices (≤ 480px) */
+/* ---------------------------------- */
+@media (max-width: 480px) {
+    .catalog {
+        grid-template-columns: 1fr;
+    }
+
+    .may {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+    .dropdown-item {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo i {
+        font-size: 22px;
+    }
+
+    .host-button button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .specs, .nights, .sec {
+        font-size: 13px;
+    }
+
+    .head1 {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .bottom_head {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .bottoms {
+        margin-left: 20px;
+    }
+
+    #nav-link {
+        font-size: 13px;
+    }
+}
