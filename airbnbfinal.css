@@ -1,0 +1,318 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #ff385c;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i {
+    font-size: 28px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.nav-items {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: #ff385c;
+}
+
+.host-button button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.host-button button:hover {
+    background-color: #f7f7f7;
+}
+body{
+    background: #f0f0f0;
+}
+
+.homes{
+    width: 100px;
+    height: 100px;
+}
+/*First line*/
+.one{
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
+/*Second line*/
+.two{
+    border: none;
+    height: 0px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*Styling the rounded top*/
+.may{
+    background: rgb(247, 247, 247);
+    height: 65px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 3fr 1fr;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 70px;
+}
+
+
+
+/*Styling each category in the rounded top*/
+.june{
+   padding: 15px 30px 10px 30px;
+    cursor: pointer;
+}
+
+/*Styling the top text of the rounded top*/
+.may_top{
+    font-size: smaller;
+    font-weight: bold;
+}
+
+/*Styling the bottom text of the rounded top*/
+.may_bottom{
+    color: #555;
+}
+
+/*Styling the search bar of the rounded top*/
+.search{
+    display: flex;
+    background-color: #FF385C;
+    color: white;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/*Styling what happens to each category of the rounded top*/
+.june:hover{
+    background-color: #e1e1e1;
+    border-radius: 40px;
+}
+
+/*The general structure of the explore section*/
+.catalog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 1%;
+    row-gap: 1px;
+    margin: 15px 40px 40px 40px;
+    
+}
+
+/* Rooms Description */
+.specs{
+    color: black;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.nights{
+    display: block;
+    padding-left: 5px;
+    color: rgb(93, 93, 93);
+    font-weight: lighter;
+    padding-top: 4px;
+}
+
+/*Each image in explore section*/
+img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 17px;
+    margin-bottom: 6px;
+}
+
+/*Each options*/
+.sec{
+    font-size: 14px !important;
+}
+
+/*Each rows heading*/
+.head1{
+    color: black;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.down{
+    background: white;
+    padding-bottom: 20px;
+}
+
+/*Beginning of footer*/
+footer{
+    font-size: 15px;
+}
+.bottoms{
+    margin-left: 40px;
+}
+
+/*Footer heading*/
+.bottom_head{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/*Categories under footer heading*/
+#nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+/*Sections under each category*/
+.categories{
+    padding: 20px 20px 10px 0px;
+}
+/*Top of each section*/
+.popular1{
+    padding-top: 10px;
+}
+/*Bottom of each section*/
+.popular2 {
+    padding-top: 7px;
+}
+.popular2 a{
+    color: #555;
+    padding-top: 10px;
+}
+.popular1 a{
+    font-weight: bold;
+    color: black;
+    padding-top: 10px;
+}
+
+/*Content of each category*/
+.dropdown-item{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: fit-content;
+}
+.content .dropdown-item:nth-child(2),
+.content .dropdown-item:nth-child(3),
+.content .dropdown-item:nth-child(4){
+    display: none;
+}
+.item1:hover~.content .dropdown-item:nth-child(1),
+.item2:hover~.content .dropdown-item:nth-child(2),
+.item3:hover~.content .dropdown-item:nth-child(3),
+.item4:hover~.content .dropdown-item:nth-child(4){
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: fit-content;
+}
+.item2:hover~.content .dropdown-item:nth-child(1),
+.item3:hover~.content .dropdown-item:nth-child(1){
+    display: none;
+}
+
+/*Support, Hosting and Airbnb*/
+.second_half{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 80px;
+    border-bottom: 1px solid #ccc ;
+    padding-bottom: 20px;
+}
+/*Each heading*/
+.tops{
+    color: black;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+/*Its content*/
+.buttoms{
+    display: block;
+    padding: 5px 15px 15px 0px;
+    color: black;
+}
+.buttoms:hover{
+    text-decoration: underline;
+}
+.lowest{
+    padding-bottom: 30px;
+}
+
+#first_half{
+    color: black;
+    margin-right: 420px;
+}
+.lowest{
+    display: flex;
+    flex-wrap: wrap;
+}
+#lowest_links{
+    color: black;
+}
+#lowest_links:hover{
+    text-decoration: underline;
+}
+
+.icon{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+}
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
