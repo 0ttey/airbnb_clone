@@ -339,9 +339,7 @@ footer{
     }
 
     .catalog {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2%;
-        row-gap: 10px;
+        overflow-x: auto;
     }
 
     .dropdown-item {
@@ -391,10 +389,7 @@ footer{
     }
 
     .catalog {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2%;
-        row-gap: 10px;
-        margin: 10px 20px;
+         overflow-x: auto;
     }
 
     .dropdown-item {
@@ -425,7 +420,7 @@ footer{
 /* ---------------------------------- */
 @media (max-width: 480px) {
     .catalog {
-        grid-template-columns: 1fr;
+       overflow-x: auto; 
     }
 
     .may {
