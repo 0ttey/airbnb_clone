@@ -40,17 +40,26 @@
 }
 
 .host-button button {
-    background-color: white;
+    background: #f0f0f0;
     color: #333;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-weight: bold;
     cursor: pointer;
 }
 
+.host-button i {
+    padding-top: 9px;
+}
 .host-button button:hover {
     background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+.top-right{
+    display: flex;
+    gap: 20px;
+
 }
 body{
     background: #f0f0f0;
@@ -466,4 +475,72 @@ footer{
     #nav-link {
         font-size: 13px;
     }
+}
+.login-box {
+    display: none;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.continue-btn {
+    background: linear-gradient(to right, #ff5a5f, #d50029);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.separator {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.social-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+.login_page{
+    display: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
